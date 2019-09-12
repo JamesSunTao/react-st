@@ -1,4 +1,5 @@
 import React from 'react';
+import NameForm from '../component/from';
 
 class About extends React.Component {
     constructor(props){
@@ -8,6 +9,7 @@ class About extends React.Component {
     render(){
         return (
             <div className="red">
+                <NameForm/>
             welcome About,{this.props.name }
             </div>
         )

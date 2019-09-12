@@ -20,7 +20,7 @@ module.exports = {
         index: './src/index.js'
     },
     output: {
-        filename: 'bundle.js', // 输出的文件名
+        filename: '[name].js', // 输出的文件名
         path: path.resolve(__dirname, 'dist') // 
     },
     module: {
@@ -51,6 +51,20 @@ module.exports = {
     },
     performance: {
         hints: false, // 关闭性能提示
+    },
+    optimization: {
+        runtimeChunk: {
+            name: "manifest"
+        },
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    chunks: "all"
+                }
+            }
+        }
     },
     plugins: [
         new MiniCssExtractPlugin({

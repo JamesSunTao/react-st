@@ -9,8 +9,8 @@ class App extends Component {
     }
     render(){
         return (
-            <div>
-                <p className="red">hello world</p>
+            <div className="red">
+                <p className="yellow">hello world</p>
             </div>
         )
     }

@@ -8,7 +8,7 @@ class Home extends React.Component {
     render(){
         return (
             <div className="red">
-                能否告诉大家开了个{this.props.name }
+                  welcome Home,{this.props.name }
             </div>
         )
     }

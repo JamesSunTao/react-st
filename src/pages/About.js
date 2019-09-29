@@ -1,5 +1,6 @@
 import React from 'react';
 import NameForm from '../component/from';
+import BoxContent from '../component/children'
 
 class About extends React.Component {
     constructor(props){
@@ -10,6 +11,7 @@ class About extends React.Component {
         return (
             <div className="red">
                 <NameForm/>
+                <BoxContent text="传递性能"/>
             welcome About,{this.props.name }
             </div>
         )

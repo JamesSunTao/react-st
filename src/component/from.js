@@ -1,4 +1,5 @@
 import React from 'react';
+import Calculator from './wendu';
 
 class NameForm extends React.Component {
     constructor(props) {
@@ -37,6 +38,9 @@ class NameForm extends React.Component {
           </select>
            当前名称: {this.state.text}
           </label>
+          
+              <Calculator/>
+          
           <input type="submit" value="Submit" />
         </form>
       );
